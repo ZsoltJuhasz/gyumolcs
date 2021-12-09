@@ -7,4 +7,21 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'feti';
+  writer = 'Juhász Zsolt';
+  newGyumolcs = '';
+  gyumolcsok = [
+    'alma',
+    'körte',
+    'barack',
+    'szilva',
+    'banán',
+    'ribizli',
+    'birs',
+    'eper',
+    'szőlő'
+  ];
+  hozzaadGyumolcs():void{
+    console.log(this.newGyumolcs);
+    this.gyumolcsok.push(this.newGyumolcs);
+  }
 }
